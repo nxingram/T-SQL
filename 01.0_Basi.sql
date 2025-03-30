@@ -1,4 +1,5 @@
-T-SQL (Transact-SQL) è un linguaggio di programmazione utilizzato per gestire e manipolare database relazionali in Microsoft SQL Server. È un'estensione di SQL (Structured Query Language) e aggiunge funzionalità procedurali, variabili, controllo di flusso e altro ancora.
+T-SQL (Transact-SQL) è un linguaggio di programmazione utilizzato per gestire e manipolare database relazionali in Microsoft SQL Server. 
+    È un'estensione di SQL (Structured Query Language) e aggiunge funzionalità procedurali, variabili, controllo di flusso e altro ancora.
 
 Iniziamo con le basi e poi approfondiremo gradualmente.
 
