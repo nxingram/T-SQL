@@ -135,10 +135,6 @@ Transazioni:
         UPDATE Accounts SET Balance = Balance + 100 WHERE AccountID = 2;
         COMMIT TRANSACTION;
 
-Consigli 1  per l'apprendimento:  
- 1. learncooding.com
-learncooding.com
-
 
 
 
