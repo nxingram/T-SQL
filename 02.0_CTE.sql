@@ -1,5 +1,9 @@
+source: https://www.yimp.it/cte-come-e-quando-utilizzarle-nel-tuo-codice-sql
+  
+--------------------------------
 Un esempio di utilizzo delle CTE
-
+--------------------------------
+  
 Faccio un esempio pratico per spiegare meglio l’utilizzo delle CTE. 
   Supponiamo di avere la tabella Fatture contenente le colonne IdFattura, DataFattura e Importo e che ci venga chiesto di calcolare l’importo annuo medio, vale a dire la media degli importi calcolati per ogni anno. 
   Molti sviluppatori si imbatteranno in un vicolo cieco cercando di scrivere un’unica query che risolva direttamente il problema. 
@@ -63,4 +67,42 @@ FROM   ImportiFattureAnnui;
 otterrò l’errore “ImportiFattureAnnui non esiste”. 
   Utilizzando la CTE non creiamo nessuna tabella, stiamo solo definendo un’espressione SQL il cui output può essere utilizzato al pari di una tabella all’interno dello stessa esecuzione.
 
-source: https://www.yimp.it/cte-come-e-quando-utilizzarle-nel-tuo-codice-sql/
+
+----------------------------------------
+Utilizzare più CTE in una sola query
+--------------------------------------
+
+Non c’è limite al numero di CTE utilizzabili in una query. Potremmo ad esempio scrivere una query che contiene due CTE e poi le utilizzi per eseguire una JOIN. 
+  Basta ricordare la sintassi che prevede di scrivere WITH una sola volta e separare le diverse CTE con una virgola:
+
+WITH 
+  CTE1 AS
+     (<Query1>),
+  CTE2 AS
+     (<Query2>)
+SELECT *
+FROM   CTE1
+JOIN   CTE2 
+    ON .....
+
+È importante sottolineare che la query della seconda CTE può contenere, oltre a qualsiasi altra tabella, 
+  anche tutte le CTE definite in precedenza nella query! Un utilizzo più avanzato consiste infine nell’utilizzare le CTE ricorsivamente, 
+  come descritto in questo articolo https://www.mssqltips.com/sqlservertip/1520/recursive-queries-using-common-table-expressions-cte-in-sql-server/.
+
+In questo modo è possibile scrivere del codice modulare, comprensibile e manutenibile, semplificando anche il processo di creazione e ideazione del codice. 
+  Solo in un secondo momento, analizzando il piano di esecuzione della query, potremmo valutare di riscrivere la query in modo diverso per migliorarne eventualmente le performance.
+
+
+
+
+
+
+
+
+
+
+  .
+
+
+
+  
