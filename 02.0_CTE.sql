@@ -1,7 +1,7 @@
 source: https://www.yimp.it/cte-come-e-quando-utilizzarle-nel-tuo-codice-sql
   
 --------------------------------
-Un esempio di utilizzo delle CTE
+Un esempio di utilizzo delle CTE (Common Table Expression)
 --------------------------------
   
 Faccio un esempio pratico per spiegare meglio l’utilizzo delle CTE. 
