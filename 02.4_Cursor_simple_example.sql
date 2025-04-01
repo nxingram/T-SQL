@@ -45,4 +45,12 @@ BEGIN
 
 END
 
-But note that you should avoid using CURSORS if there is alternative not iterative way of doing the same job. But of course there are a situations when you can not avoid CURSORs
+But note that you should avoid using CURSORS if there is alternative not iterative way of doing the same job. 
+ But of course there are a situations when you can not avoid CURSORs
+
+
+
+
+
+
+.
